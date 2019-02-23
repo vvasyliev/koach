@@ -1,0 +1,46 @@
+@import '../../../theme/theme.styl'
+
+.postCard
+  background-color: white
+  border: 1px solid $textDimmed
+  padding: 0.5rem 1rem
+  margin-bottom: 1rem
+
+.postCardInfo
+  font-size: 12px
+  margin-bottom: 0.25rem
+
+.postCardUsername
+  margin-right: 0.5rem
+  cursor: pointer
+
+  &:hover
+    color: $primary
+
+.postCardTitle
+  margin: 0 0 .25rem 0
+  color: $text
+
+.postCardDescription
+  color: $textDimmed
+
+.postCardControls
+  display: flex
+  flex-direction: row
+  font-size: 12px
+
+.postCardAction
+  display: flex
+  align-items: center
+  margin-top: 1rem
+  cursor: pointer
+
+  &:hover
+    color: $primary
+    fill: $primary
+
+  &:not(last-child)
+    margin-right: 0.5rem
+
+.postCardActionLabel
+  margin-left: 0.25rem

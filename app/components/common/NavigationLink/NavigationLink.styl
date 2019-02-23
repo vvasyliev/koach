@@ -1,0 +1,17 @@
+@import '../../../theme/theme.styl'
+
+.navigationLink
+  display: inline-flex
+  padding: 1rem
+  text-transform: uppercase
+  text-decoration: none
+  font-weight: bold
+  color: $text
+  transition: 0.2s linear border
+  border-bottom: 0.25rem solid transparent
+
+  &:hover
+    border-bottom: 0.25rem solid $primary
+
+.activeLink
+    border-bottom: 0.25rem solid $primary

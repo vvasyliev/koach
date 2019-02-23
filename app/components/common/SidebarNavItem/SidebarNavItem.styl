@@ -1,0 +1,21 @@
+@import '../../../theme/theme.styl'
+
+.sidebarNavItem
+  display: inline-flex
+  align-items: center
+  padding: 0.5rem 0
+  color: $text
+  cursor: pointer
+  transition: 0.2s ease-in-out color
+
+  &:hover
+    color: $primary
+    fill: $primary
+
+.sidebarNavLabel
+  font-weight: bold
+  margin-left: .5rem
+
+.sidebarNavItemActive
+  color: $primary
+  fill: $primary

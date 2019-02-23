@@ -1,6 +1,17 @@
 import React from 'react';
 import { render } from 'react-dom';
+import { Provider } from 'mobx-react';
 
-import App from './components/App';
+import createStores from '../app/stores/createStore';
 
-render(<App />, document.querySelector('main#app'));
+import App from './App';
+
+// prepare MobX stores
+const rootStore = createStores();
+
+render(
+  <Provider {...rootStore}>
+    <App />
+  </Provider>,
+  document.querySelector('main#app')
+);
