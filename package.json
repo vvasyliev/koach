@@ -1,0 +1,28 @@
+{
+  "name": "koach",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Ibrasau/koach.git",
+  "author": "Viacheslav Vasyliev <ibrasau@icloud.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "parcel serve app/index.html",
+    "build": "cross-env NODE_ENV=production parcel build app/index.html --public-url .",
+    "watch": "parcel watch app/index.html",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "devDependencies": {
+    "@types/react": "^16.8.4",
+    "@types/react-dom": "^16.8.2",
+    "parcel-bundler": "^1.11.0",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "typescript": "^3.3.3333"
+  },
+  "dependencies": {
+    "@reach/router": "^1.2.1",
+    "normalize.css": "^8.0.1"
+  }
+}
