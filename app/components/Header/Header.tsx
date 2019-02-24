@@ -16,8 +16,8 @@ class Header extends Component {
           <NavigationLink to='users'>Users</NavigationLink>
           <NavigationLink to='more'>More</NavigationLink>
         </nav>
-        <section>
-          profile
+        <section className={styles.profileSection}>
+          <span>Anonymous</span>
         </section>
       </header>
     )

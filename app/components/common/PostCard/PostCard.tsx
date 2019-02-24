@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import dayjs from 'dayjs';
 import { MessageSquare, Share, Save } from 'react-feather';
 
-
 import styles from './PostCard.styl';
-
 
 class PostCard extends Component {
   render() {
