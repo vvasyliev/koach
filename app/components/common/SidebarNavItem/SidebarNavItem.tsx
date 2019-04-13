@@ -10,7 +10,7 @@ export interface ISidebarNavItemProps {
   onClick: () => void;
 }
 
-const SidebarNavItem: React.SFC<ISidebarNavItemProps> = ({
+const SidebarNavItem: React.FC<ISidebarNavItemProps> = ({
   isActive = false,
   icon: Icon,
   onClick,

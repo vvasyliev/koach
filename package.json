@@ -11,13 +11,16 @@
     "build": "cross-env NODE_ENV=production parcel build app/index.html --public-url .",
     "watch": "parcel watch app/index.html",
     "predeploy": "yarn run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "ts-node app/server.ts"
   },
   "devDependencies": {
     "@types/classnames": "^2.2.7",
+    "@types/express": "^4.16.1",
     "@types/reach__router": "^1.2.3",
     "@types/react": "^16.8.4",
     "@types/react-dom": "^16.8.2",
+    "cross-env": "^5.2.0",
+    "express": "^4.16.4",
     "parcel-bundler": "^1.11.0",
     "postcss-modules": "^1.4.1",
     "react": "^0.13.0 || ^0.14.0 || ^15.0.0 || ^16.0.0",

@@ -13,7 +13,7 @@ export interface ILinkProps {
   isCurrent: boolean;
 }
 
-const NavigationLink: React.SFC<INavigationLinkProps> = ({ to, children }) => {
+const NavigationLink: React.FC<INavigationLinkProps> = ({ to, children }) => {
   const getProps = ({ isCurrent }: ILinkProps) => ({
     className: classNames(styles.navigationLink, {
       [styles.activeLink]: isCurrent

@@ -4,6 +4,7 @@
     "target": "es6",
     "esModuleInterop": true,
     "jsx": "react",
+    "outDir": "dist",
     "noImplicitAny": true,
     "removeComments": true
   },
