@@ -6,11 +6,11 @@ const port = process.env.PORT || 1234;
 
 app.use(express.static(path.resolve('dist')));
 
-app.get('/api/v1/getPost/:postId', (req, res) => {
+app.get('/api/v1/post/:postId', (req, res) => {
   const { params } = req;
   const { postId } = params;
 
-  console.info('GET getPosts: ', postId);
+  console.info('GET post: ', postId);
   res.sendStatus(200);
 });
 
